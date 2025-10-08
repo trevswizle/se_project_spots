@@ -1,0 +1,6 @@
+@import url(./vendor/normalize.css);
+@import url(./fonts/fonts.css);
+
+.page {
+    background-color: #FCF5E5;
+}
