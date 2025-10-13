@@ -1,0 +1,31 @@
+.page {
+    background-color: #FCF5E5;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.profile__avatar {
+    margin-right: 20px;
+
+}
+
+.profile__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__name {
+    margin: 0 0 12px;
+}
+
+.profile__role {
+    margin: 0;
+}
+
+.profile__edit-btn {
+    margin-top: auto;
+}
+
+.profile__add-btn {
+    margin-left: auto;
+}
