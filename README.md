@@ -8,7 +8,7 @@
   
 **Intro**
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
+This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  This project Had me utilize creating a version of a profile page like one you'll see on instagram and facebook. its compatable for a moble format and more.
   
 **Figma**  
   
@@ -16,6 +16,14 @@ This project is made so all the elements are displayed correctly on popular scre
   
 **Images**  
   
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
+[Images](./images)
+
+**Video**
+
+[Video overveiw of the Project](https://youtu.be/NpEaa2P7qZI?si=FdFuqMgNmW8R5FXm)
+
+**Link to website**
+
+[link](trevswizle.github.io/se_project_spots/)
   
 Good luck and have fun!
