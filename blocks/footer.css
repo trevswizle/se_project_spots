@@ -1,8 +1,11 @@
 .footer {
     padding: 60px 668px;
+    height: 16px;
+    width: 104px;
 }
 
 .footer__copyright {
     color: #212121;
     opacity: 70%;
+    margin: 0;
 }
