@@ -20,10 +20,9 @@ This project is made so all the elements are displayed correctly on popular scre
 
 **Video**
 
-[Video overveiw of the Project](https://youtu.be/NpEaa2P7qZI?si=FdFuqMgNmW8R5FXm)
+* [Video overveiw of the Project](http://loom.com/share/07916f31a81649ecb708bf15e78d4d47)
 
 **Link to website**
 
-[link](trevswizle.github.io/se_project_spots/)
-  
-Good luck and have fun!
+* [link](trevswizle.github.io/se_project_spots/)
+
