@@ -30,6 +30,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   max-width: 420px;
 }
 
