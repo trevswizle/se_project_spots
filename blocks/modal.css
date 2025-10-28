@@ -1,5 +1,4 @@
 .modal {
-    visibility: hidden;
     background-color: #00000080;
     position: fixed;
     top: 0;
@@ -30,6 +29,8 @@
     background-color: #fff;
     padding: 32px 50px;
     position: relative;
+    max-width: 730px;
+
 }
 
 .modal__title {
