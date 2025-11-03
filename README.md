@@ -22,5 +22,5 @@ This project is made so all the elements are displayed correctly on popular scre
 
 **Link to website**
 
-* [link](trevswizle.github.io/se_project_spots/)
+* [link](https://trevswizle.github.io/se_project_spots/)
 

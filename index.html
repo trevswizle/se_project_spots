@@ -30,7 +30,7 @@
             class="profile__avatar"
           />
           <div class="profile__column">
-            <h2 class="profile__name">Bessie Coleman</h2>
+            <h1 class="profile__name">Bessie Coleman</h2>
             <p class="profile__role">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
               <img
@@ -131,10 +131,10 @@
         <div class="modal__container">
           <h2 class="modal__title">Edit Profile</h2>
           <button type="button" class="modal__close-btn"><img src="./images/x_btn.svg" alt="x button" class="modal__close-btn-image"></button>
-          <form class="modal__form">
+          <form class="modal__form" id="edit-profile-form">
             <label for="profile-name-input" class="modal__label">
               Name
-              <input id="profile-name-input" type="text" placeholder="Type your name" class="modal__input">
+              <input id="new-post-title-input" type="text" placeholder="Type your name" class="modal__input">
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
@@ -148,7 +148,7 @@
         <div class="modal__container">
           <h2 class="modal__title">New Post</h2>
           <button type="button" class="modal__close-btn"><img src="./images/x_btn.svg" alt="x button" class="modal__close-btn-image"></button>
-          <form class="modal__form">
+          <form class="modal__form" id="new-post-form">
             <label for="profile-name-input" class="modal__label">
               Image link
               <input id="profile-name-input" type="text" placeholder="Paste a link to the picture" class="modal__input">

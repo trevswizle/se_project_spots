@@ -29,10 +29,11 @@
 }
 
 .modal__container {
+  box-sizing: border-box;
   width: 100%;
+  padding: 32px 50px;
   border-radius: 8px;
   background-color: #fff;
-  padding: 32px 50px;
   position: relative;
   max-width: 730px;
   transform: scale(0.95);
@@ -49,7 +50,6 @@
   margin: 0 0 32px;
   font-family: "Poppins", 'Times New Roman', Times, serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 32px;
   line-height: 100%;
   color: #212121;
@@ -81,7 +81,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-family: "Poppins" 'Times New Roman', Times, serif;
+  font-family: "Poppins", 'Times New Roman', Times, serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 110.00000000000001%;
@@ -89,6 +89,7 @@
 }
 
 .modal__input {
+  box-sizing: border-box;
   height: 52px;
   border-radius: 8px;
   border: 1px solid #21212166;
@@ -117,9 +118,8 @@
   width: 156px;
   height: 52px;
   background-color: #212121;
-  color: #fff;
   border-radius: 8px;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #FCF5E5;

@@ -1,51 +1,67 @@
 const modalProfileBtn = document.querySelector('.profile__edit-btn');
 const profileModal = document.querySelector('#edit-profile-modal');
-const profileModalClsBtn = document.querySelector('#edit-profile-modal .modal__close-btn');
+const profileModalCloseBtn = document.querySelector('#edit-profile-modal .modal__close-btn');
 const newPostModalBtn = document.querySelector('.profile__add-btn');
 const newPostModal = document.querySelector('#new-post-modal');
-const newPostModalClsBtn = document.querySelector('#new-post-modal .modal__close-btn');
+const newPostModalCloseBtn = document.querySelector('#new-post-modal .modal__close-btn');
 const profileNameEl = document.querySelector('.profile__name');
 const profileRoleEl = document.querySelector('.profile__role');
-const profileNameInput = document.querySelector('#profile-name-input');
+
+const profileNameInput = document.querySelector('#new-post-title-input');
 const profileDescriptionInput = document.querySelector('#profile-description-input');
-const modalFormName = document.querySelector('.modal__form');
+const modalFormName = document.querySelector('#edit-profile-form');
+
+const mordalFormPost = document.querySelector('#new-post-form');
+
+
+
+function openModal(modal) {
+    modal.classList.remove('modal_is-closed');
+    modal.classList.add('modal_is-open');
+}
+
+function closeModal(modal) {
+    modal.classList.add('modal_is-open');
+    modal.classList.remove('modal_is-open');
+}
 
 modalProfileBtn.addEventListener('click', () => {
     const newName = profileNameEl.textContent;
-    const newDescript = profileRoleEl.textContent;
+    const newDescription = profileRoleEl.textContent;
 
     profileNameInput.value = newName;
-    profileDescriptionInput.value = newDescript;
+    profileDescriptionInput.value = newDescription;
 
-    profileModal.classList.remove('modal_is-closed');
-    profileModal.classList.add('modal_is-open');
+    openModal(profileModal);
 });
 
 modalFormName.addEventListener('submit', (evt) => {
     evt.preventDefault();
 
     const updatedName = profileNameInput.value;
-    const updatedDesc = profileDescriptionInput.value;
+    const updatedDescription = profileDescriptionInput.value;
 
     profileNameEl.textContent = updatedName;
-    profileRoleEl.textContent = updatedDesc;
+    profileRoleEl.textContent = updatedDescription;
 
-    profileModal.classList.remove('modal_is-open');
-    profileModal.classList.add('modal_is-closed');
+    closeModal(profileModal);
 });
 
-profileModalClsBtn.addEventListener('click', function() {
-  profileModal.classList.remove('modal_is-open');
-  profileModal.classList.add('modal_is-closed');
+profileModalCloseBtn.addEventListener('click', function() {
+    closeModal(profileModal);
 });
 
 newPostModalBtn.addEventListener('click', () => {
-    newPostModal.classList.remove('modal_is-closed');
-    newPostModal.classList.add('modal_is-open');
+    openModal(newPostModal);
 });
 
-newPostModalClsBtn.addEventListener('click', function() {
-    newPostModal.classList.remove('modal_is-open');
-    newPostModal.classList.add('modal_is-closed');
+mordalFormPost.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+
+    closeModal(newPostModal);
+});
+
+newPostModalCloseBtn.addEventListener('click', function() {
+    closeModal(newPostModal);
 });
 
