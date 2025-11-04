@@ -12,17 +12,21 @@ const profileDescriptionInput = document.querySelector('#profile-description-inp
 const modalFormName = document.querySelector('#edit-profile-form');
 
 const mordalFormPost = document.querySelector('#new-post-form');
-
+const nameInput = document.querySelector('#profile-description-input');
+const linkInput = document.querySelector('#profile-name-input');
 
 
 function openModal(modal) {
     modal.classList.remove('modal_is-closed');
     modal.classList.add('modal_is-open');
+    // feedback told me to remove it, but if it goes it doesn't work
+
 }
 
 function closeModal(modal) {
-    modal.classList.add('modal_is-open');
+    modal.classList.add('modal_is-closed');
     modal.classList.remove('modal_is-open');
+    // feedback told me to remove it, but if it goes it doesn't work
 }
 
 modalProfileBtn.addEventListener('click', () => {
@@ -57,6 +61,9 @@ newPostModalBtn.addEventListener('click', () => {
 
 mordalFormPost.addEventListener('submit', (evt) => {
     evt.preventDefault();
+
+    console.log(nameInput);
+    console.log(linkInput);
 
     closeModal(newPostModal);
 });
