@@ -1,32 +1,26 @@
 const modalProfileBtn = document.querySelector('.profile__edit-btn');
-const profileModal = document.querySelector('#edit-profile-modal');
-const profileModalCloseBtn = document.querySelector('#edit-profile-modal .modal__close-btn');
+const profileModal = document.querySelector('#edit-proile-modal');
+const profileModalCloseBtn = document.querySelector('#edit-proile-modal .modal__close-btn');
 const newPostModalBtn = document.querySelector('.profile__add-btn');
 const newPostModal = document.querySelector('#new-post-modal');
 const newPostModalCloseBtn = document.querySelector('#new-post-modal .modal__close-btn');
 const profileNameEl = document.querySelector('.profile__name');
 const profileRoleEl = document.querySelector('.profile__role');
 
+const modalFormName = document.querySelector('#edit-profile-form');
 const profileNameInput = document.querySelector('#new-post-title-input');
 const profileDescriptionInput = document.querySelector('#profile-description-input');
-const modalFormName = document.querySelector('#edit-profile-form');
 
 const mordalFormPost = document.querySelector('#new-post-form');
 const nameInput = document.querySelector('#profile-description-input');
 const linkInput = document.querySelector('#profile-name-input');
 
-
 function openModal(modal) {
-    modal.classList.remove('modal_is-closed');
     modal.classList.add('modal_is-open');
-    // feedback told me to remove it, but if it goes it doesn't work
-
 }
 
 function closeModal(modal) {
-    modal.classList.add('modal_is-closed');
     modal.classList.remove('modal_is-open');
-    // feedback told me to remove it, but if it goes it doesn't work
 }
 
 modalProfileBtn.addEventListener('click', () => {
