@@ -76,7 +76,7 @@
         <div class="modal__image-containor">
           <button type="button" class="modal__imgage-btn"></button>
           <img 
-            src="" 
+            src="#" 
             alt="" 
             class="modal__image"
           >
@@ -89,7 +89,7 @@
           <h2 class="modal__title">Edit Profile</h2>
           <button type="button" class="modal__close-btn"><img src="./images/x_btn.svg" alt="x button" class="modal__close-btn-image"></button>
           <form class="modal__form" id="edit-profile-form">
-            <label for="profile-name-input" class="modal__label">
+            <label for="new-post-title-input" class="modal__label">
               Name
               <input id="new-post-title-input" type="text" placeholder="Type your name" class="modal__input">
             </label>
@@ -108,11 +108,11 @@
           <form class="modal__form" id="new-post-form">
             <label for="profile-name-input" class="modal__label">
               Image link
-              <input id="profile-link-input" type="text" placeholder="Paste a link to the picture" class="modal__input">
+              <input id="profile-link-input" type="text" required placeholder="Paste a link to the picture" class="modal__input">
             </label>
-            <label for="profile-description-input" class="modal__label">
+            <label for="profile-caption-input" class="modal__label">
               Caption
-              <input id="profile-caption-input" type="text" placeholder="Type your caption" class="modal__input">
+              <input id="profile-caption-input" required type="text" placeholder="Type your caption" class="modal__input">
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>

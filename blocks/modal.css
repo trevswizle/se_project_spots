@@ -19,11 +19,6 @@
   visibility: visible;
 }
 
-.modal_is-closed {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .modal__input {
   display: block;
 }
@@ -108,7 +103,6 @@
 .modal__input::placeholder {
   font-family: "Poppins", 'Times New Roman', Times, serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
   line-height: 100%;
   color: #2121214D;
@@ -139,7 +133,6 @@
   max-height: 80vh;
   display: flex;
   flex-direction: column;
-  display: flex;
 }
 
 .modal__imgage-btn {
@@ -151,7 +144,7 @@
   background-color: transparent;
   width: 40px;
   height: 40px;
-  opacity: 40%;
+  opacity: 0.4;
   position: absolute;
   top: 0;
   right: -52.5px;
@@ -159,7 +152,7 @@
 
 .modal__imgage-btn:hover {
   cursor: pointer;
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__image {
@@ -212,5 +205,9 @@
   .modal__close-btn {
     top: 12px;
     right: 12px;
+  }
+  .modal__imgage-btn {
+    right: 0;
+    top: -40px;
   }
 }

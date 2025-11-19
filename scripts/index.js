@@ -21,13 +21,11 @@ const modalFormName = document.querySelector('#edit-profile-form');
 const profileNameInput = document.querySelector('#new-post-title-input');
 const profileDescriptionInput = document.querySelector('#profile-description-input');
 
-const mordalFormPost = document.querySelector('#new-post-form');
-const nameInput = document.querySelector('#profile-description-input');
-const linkInput = document.querySelector('#profile-name-input');
+const modalFormPost = document.querySelector('#new-post-form');
+const linkInput = document.querySelector('#new-post-title-input');
 
 const cardsContainer = document.querySelector(".cards__list");
-const cardtemplate = document.querySelector("#card-template").content.querySelector(".card");
-
+const cardTemplate = document.querySelector("#card-template").content.querySelector(".card");
 
 const newLinkEl = document.querySelector("#profile-link-input");
 const newCaptionEl = document.querySelector("#profile-caption-input")
@@ -38,9 +36,13 @@ const previewImageEl = imageModal.querySelector(".modal__image");
 const previewCaptionEl = imageModal.querySelector(".modal__caption");
 const previewCloseBtn = imageModal.querySelector(".modal__imgage-btn");
 
+previewCloseBtn.addEventListener('click', () => {
+    closeModal(imageModal);
+});
+
 // this function makes the card and is all the funtionality
 function getCardElement (data) {
-    const cardElement = cardtemplate.cloneNode(true);
+    const cardElement = cardTemplate.cloneNode(true);
     const cardLinkEl = cardElement.querySelector(".card__image");
     const cardTileEl = cardElement.querySelector(".card__title");
     const likeButton = cardElement.querySelector(".card__like-btn");
@@ -67,10 +69,6 @@ function getCardElement (data) {
         previewCaptionEl.textContent = data.name; // 3. Set caption
         openModal(imageModal);         // 4. Open modal
     });
-
-    previewCloseBtn.addEventListener('click', () => {
-        closeModal(imageModal);
-    })
 
     return cardElement;
 }
@@ -117,7 +115,7 @@ newPostModalBtn.addEventListener('click', () => {
     openModal(newPostModal);
 });
 
-mordalFormPost.addEventListener('submit', (evt) => {
+modalFormPost.addEventListener('submit', (evt) => {
     evt.preventDefault();
 
     const newCaptionInput = newCaptionEl.value;
@@ -132,8 +130,7 @@ mordalFormPost.addEventListener('submit', (evt) => {
 
     cardsContainer.prepend(newCardElement);
 
-    newCaptionEl.value = "";
-    newLinkEl.value = "";
+    modalFormPost.reset();
 
     closeModal(newPostModal);
 });
