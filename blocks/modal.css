@@ -127,12 +127,6 @@
 
 .modal__image-containor {
   position: relative;
-  padding: 0;
-  width: auto;
-  max-width: 80vw;
-  max-height: 80vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .modal__imgage-btn {
@@ -158,11 +152,14 @@
 .modal__image {
   max-width: 80vw;
   max-height: 80vh;
-  width: auto;
+  width: 100%;
   height: auto;
-  object-fit: contain;
   display: block;
   border-radius: 8px;
+}
+
+.modal_image_type {
+  padding: 0 16px;
 }
 
 .modal__caption {
@@ -175,7 +172,7 @@
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 120%;
 }
 
@@ -209,5 +206,11 @@
   .modal__imgage-btn {
     right: 0;
     top: -40px;
+  }
+  .modal__caption {
+    font-size: 16px;
+  }
+  .modal__image {
+    max-width: unset;
   }
 }
