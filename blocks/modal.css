@@ -137,7 +137,7 @@
   position: relative;
 }
 
-.modal__imgage-btn {
+.modal__image-btn {
   background-image: url(../images/imgaeClose.svg);
   background-size: contain;
   background-repeat: no-repeat;

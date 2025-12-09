@@ -36,7 +36,7 @@ const newCaptionEl = document.querySelector("#profile-caption-input");
 const imageModal = document.querySelector('#image-modal');
 const previewImageEl = imageModal.querySelector(".modal__image");
 const previewCaptionEl = imageModal.querySelector(".modal__caption");
-const previewCloseBtn = imageModal.querySelector(".modal__imgage-btn");
+const previewCloseBtn = imageModal.querySelector(".modal__image-btn");
 
 previewCloseBtn.addEventListener('click', () => {
     closeModal(imageModal);
