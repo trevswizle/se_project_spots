@@ -15,10 +15,12 @@ This project is made so all the elements are displayed correctly on popular scre
 **Images**  
   
 [Images](./images)
+## Project Pitch Videos
 
-**Video**
+Check out these videos, where I describe my project
+and some challenges I faced while building it
+(http://loom.com/share/07916f31a81649ecb708bf15e78d4d47)
 
-* [Video overveiw of the Project](http://loom.com/share/07916f31a81649ecb708bf15e78d4d47)
 
 **Link to website**
 

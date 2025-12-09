@@ -18,17 +18,19 @@ const profileNameEl = document.querySelector('.profile__name');
 const profileRoleEl = document.querySelector('.profile__role');
 
 const modalFormName = document.querySelector('#edit-profile-form');
-const profileNameInput = document.querySelector('#new-post-title-input');
+const profileNameInput = document.querySelector('#new-post-title');
 const profileDescriptionInput = document.querySelector('#profile-description-input');
 
 const modalFormPost = document.querySelector('#new-post-form');
-const linkInput = document.querySelector('#new-post-title-input');
+const linkInput = document.querySelector('#new-post-title');
 
 const cardsContainer = document.querySelector(".cards__list");
 const cardTemplate = document.querySelector("#card-template").content.querySelector(".card");
 
+const cardSubmitBtn = modalFormPost.querySelector(".modal__submit-btn");
+
 const newLinkEl = document.querySelector("#profile-link-input");
-const newCaptionEl = document.querySelector("#profile-caption-input")
+const newCaptionEl = document.querySelector("#profile-caption-input");
 
 
 const imageModal = document.querySelector('#image-modal');
@@ -64,10 +66,10 @@ function getCardElement (data) {
     });
 
     cardLinkEl.addEventListener("click", () => {
-        previewImageEl.src = data.link;       // 1. Set big image
-        previewImageEl.alt = data.name;       // 2. Set alt text
-        previewCaptionEl.textContent = data.name; // 3. Set caption
-        openModal(imageModal);         // 4. Open modal
+        previewImageEl.src = data.link;
+        previewImageEl.alt = data.name;
+        previewCaptionEl.textContent = data.name;
+        openModal(imageModal);
     });
 
     return cardElement;
@@ -76,6 +78,7 @@ function getCardElement (data) {
 initialCards.forEach((item) => {
     cardsContainer.append(getCardElement(item));
 });
+
 
 function openModal(modal) {
     modal.classList.add('modal_is-open');
@@ -104,6 +107,9 @@ modalFormName.addEventListener('submit', (evt) => {
     profileNameEl.textContent = updatedName;
     profileRoleEl.textContent = updatedDescription;
 
+    disableButton(cardSubmitBtn);
+
+
     closeModal(profileModal);
 });
 
@@ -131,6 +137,10 @@ modalFormPost.addEventListener('submit', (evt) => {
     cardsContainer.prepend(newCardElement);
 
     modalFormPost.reset();
+
+    const inputList = Array.from(modalFormPost.querySelectorAll(".modal__input"));
+    resetValidation(modalFormPost, inputList);
+    toggleButtonState(inputList, cardSubmitBtn);
 
     closeModal(newPostModal);
 });
