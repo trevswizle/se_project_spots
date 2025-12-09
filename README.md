@@ -25,4 +25,5 @@ and some challenges I faced while building it
 **Link to website**
 
 * [link](https://trevswizle.github.io/se_project_spots/)
+* [link](https://youtu.be/HGv0LBqo3oI)
 
