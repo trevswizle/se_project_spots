@@ -81,12 +81,23 @@ initialCards.forEach((item) => {
 
 
 function openModal(modal) {
-    modal.classList.add('modal_is-open');
+  modal.classList.add('modal_is-open');
+  window.addEventListener('keydown', handleEscape);
 }
 
 function closeModal(modal) {
-    modal.classList.remove('modal_is-open');
+  modal.classList.remove('modal_is-open');
+  window.removeEventListener('keydown', handleEscape);
 }
+
+
+function handleEscape(evt) {
+  if (evt.key === 'Escape') {
+    const openedModal = document.querySelector('.modal_is-open');
+    closeModal(openedModal);
+  }
+}
+
 
 modalProfileBtn.addEventListener('click', () => {
     const newName = profileNameEl.textContent;
@@ -106,9 +117,6 @@ modalFormName.addEventListener('submit', (evt) => {
 
     profileNameEl.textContent = updatedName;
     profileRoleEl.textContent = updatedDescription;
-
-    disableButton(cardSubmitBtn);
-
 
     closeModal(profileModal);
 });
