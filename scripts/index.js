@@ -83,13 +83,20 @@ initialCards.forEach((item) => {
 function openModal(modal) {
   modal.classList.add('modal_is-open');
   window.addEventListener('keydown', handleEscape);
+  modal.addEventListener("mousedown", handleOverlayClick);
 }
 
 function closeModal(modal) {
   modal.classList.remove('modal_is-open');
   window.removeEventListener('keydown', handleEscape);
+  modal.removeEventListener("mousedown", handleOverlayClick);
 }
 
+function handleOverlayClick(evt) {
+    if (evt.target ==evt.currentTarget) {
+        closeModal(evt.currentTarget);
+    }
+}
 
 function handleEscape(evt) {
   if (evt.key === 'Escape') {
@@ -117,6 +124,9 @@ modalFormName.addEventListener('submit', (evt) => {
 
     profileNameEl.textContent = updatedName;
     profileRoleEl.textContent = updatedDescription;
+
+    const inputList = Array.from(modalFormPost.querySelectorAll(".modal__input"));
+    resetValidation(modalFormPost, inputList);
 
     closeModal(profileModal);
 });
