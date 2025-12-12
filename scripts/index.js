@@ -113,6 +113,10 @@ modalProfileBtn.addEventListener('click', () => {
     profileNameInput.value = newName;
     profileDescriptionInput.value = newDescription;
 
+    const inputList = Array.from(modalFormName.querySelectorAll(".modal__input"));
+    resetValidation(modalFormName, inputList);
+    toggleButtonState(inputList,modalFormName.querySelector(".modal__submit-btn"));
+
     openModal(profileModal);
 });
 
