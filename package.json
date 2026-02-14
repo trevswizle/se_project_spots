@@ -22,7 +22,7 @@
     "core-js": "3.23.5"
   },
   "author": "Trevor Smith",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",

@@ -1,4 +1,4 @@
-import { enableValidation, settings, resetValidation, toggleButtonState } from "../scripts/validation";
+import { enableValidation, settings, resetValidation, toggleButtonState } from "../scripts/validation.js";
 import "./index.css";
 let initialCards = [
     {name: "Val Thorens", link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg"},
