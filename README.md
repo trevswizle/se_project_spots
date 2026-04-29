@@ -27,3 +27,7 @@ and some challenges I faced while building it
 * [link](https://trevswizle.github.io/se_project_spots/)
 * [link](https://youtu.be/HGv0LBqo3oI)
 
+ ## Project Pitch Video
+ 
+ Check out [this video](https://youtu.be/y0sF5xhGreA?si=7lD4QkTWEj3UfbvH), where I describe my 
+ project and some challenges I faced while building it.
