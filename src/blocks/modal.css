@@ -184,6 +184,55 @@
   line-height: 120%;
 }
 
+.modal__container_confirm .modal__close-btn {
+  top: -52px;
+  right: 0;
+  background-color: transparent;
+}
+
+.modal__confirm-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.modal__delete-btn {
+  flex: 1;
+  height: 52px;
+  background-color: #ee3465;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.modal__delete-btn:hover {
+  background-color: #b5193e;
+}
+
+.modal__cancel-btn {
+  flex: 1;
+  height: 52px;
+  background-color: #fff;
+  border: 2px solid #212121;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.modal__cancel-btn:hover {
+  background-color: #212121;
+  color: #fff;
+}
+
 .modal__error {
   color: #FF0000B2;
   font-family: "Poppins", sans-serif;
