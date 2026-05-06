@@ -185,8 +185,8 @@
 }
 
 .modal__container_confirm .modal__close-btn {
-  top: -52px;
-  right: 0;
+  top: 0px;
+  right: -40px;
   background-color: transparent;
 }
 

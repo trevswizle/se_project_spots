@@ -25,5 +25,5 @@ and some challenges I faced while building it
 
  ## Project Pitch Video
  
- Check out [this video](https://youtu.be/y0sF5xhGreA?si=7lD4QkTWEj3UfbvH), where I describe my 
+ Check out [this video](https://www.loom.com/share/c38f75be3cfa48a6b551e0689f4a4f2b), where I describe my 
  project and some challenges I faced while building it.
