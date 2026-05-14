@@ -12,15 +12,11 @@ This project is made so all the elements are displayed correctly on popular scre
   
 * [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
   
-**Images**  
-  
-[Images](./images)
-
-**Video**
-
-* [Video overveiw of the Project](http://loom.com/share/07916f31a81649ecb708bf15e78d4d47)
-
 **Link to website**
 
-* [link](https://trevswizle.github.io/se_project_spots/)
+* [link](https://trevswizle.github.io/se_project_spots)
 
+ ## Project Pitch Video
+ 
+ Check out [this video](https://www.loom.com/share/c38f75be3cfa48a6b551e0689f4a4f2b), where I describe my 
+ project and some challenges I faced while building it.
